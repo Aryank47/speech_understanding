@@ -1,52 +1,67 @@
-This repo consists of the solution for the speech understanding course assignment 1:
-the assignmet details are as follows:
+# Speech Understanding Course Assignment 1
 
-Question 1: In a group of two students, you have to perform a detailed analysis of one task
-related to speech processing (examples include speech recognition, speaker identification,
-emotion recognition, speech synthesis, accent detection, or any other relevant task). Perform a
-detailed analysis covering the following aspects: Prepare a detailed report and a short
-presentation by comparing and briefly describing the SOTA models available for each task.
-These should include the following:
+This repository contains the solutions for the Speech Understanding course assignment 1.
 
-- Explain the task and its importance in the real world.
-- Analyze the strengths and limitations of state of the art models or tools in terms of the
-  methods or models available.
-- Discuss the results in terms of the metrics used to evaluate the task, including their
-  strengths and limitations.
-- Suggest what are the open problems and opportunities corresponding to that problem
-  statement.
-- Submission should include the presentation, report and the codes/datasets you have
-  worked with for this question.
+## Assignment Details
 
-Question 2: This question is to be submitted individually. Experimenting with Spectrograms
-and Windowing Techniques.
-Task A.
+### Question 1 (Group Assignment)
 
-1. Use the UrbanSound8k dataset for this assignment.
+In a group of two students, you are required to perform a detailed analysis of a task related to speech processing. Examples of relevant tasks include:
 
-2. Understand and implement the following windowing techniques:
-   a. Hann Window
-   b. Hamming Window
-   c. Rectangular Window
-3. Write a Python program to apply the above windowing techniques → Generate
-   spectrograms using the Short-Time Fourier Transform (STFT)
-   (Compare the spectrograms visually and analyze their differences. Discuss the
-   correctness of windowing performed.)
-4. Train a simple classifier (e.g., SVM or neural network) using features extracted from the
-   spectrograms and evaluate the performance results comparatively in different
-   techniques.
-   In Report write the comparison and analysis of the results computed.
+- Speech recognition
+- Speaker identification
+- Emotion recognition
+- Speech synthesis
+- Accent detection
+- Any other related task
 
-Task B.
-Select 4 songs from 4 different genres and compare their spectrograms. Analyze the
-spectrograms and provide a detailed comparative analysis based on your observations
-and speech understanding.
-Submission for both the tasks includes codes, songs you have used for analysis, and the report.
+Your analysis should address the following:
 
-To run this code first download the data sets:
-UrbanSound8k: https://www.kaggle.com/datasets/chrisfilo/urbansound8k
+- **Task Explanation:** Describe the task and its real-world importance.
+- **SOTA Models Analysis:** Compare and briefly describe the state-of-the-art (SOTA) models or tools available for the task. Discuss their strengths and limitations.
+- **Evaluation Metrics:** Analyze the results using appropriate metrics (e.g., accuracy, precision, recall, F1-score) and explain the strengths and limitations of each metric.
+- **Open Problems and Opportunities:** Identify the open problems and potential opportunities related to the task.
 
-Install the following packages:
-torch librosa matplotlib sklearn seaborn
+The submission should include a detailed report, a short presentation, and all codes/datasets used.
 
-To run a .ipynb go
+### Question 2 (Individual Assignment)
+
+This question focuses on experimenting with spectrograms and windowing techniques using the UrbanSound8K dataset.
+
+#### Task A:
+
+1. **Dataset:** Use the UrbanSound8K dataset.
+2. **Windowing Techniques:** Implement the following windowing techniques:
+   - Hann Window
+   - Hamming Window
+   - Rectangular Window
+3. **Spectrogram Generation:** Write a Python program that applies these windowing techniques to generate spectrograms using the Short-Time Fourier Transform (STFT). Compare the spectrograms visually and analyze the differences. Discuss how each windowing technique affects the spectrogram quality and the correctness of the windowing performed.
+4. **Classifier Training:** Train a simple classifier (e.g., SVM or neural network) using features extracted from the spectrograms. Evaluate and compare the performance of the different techniques. The report should include a detailed comparative analysis of the results.
+
+#### Task B:
+
+Select 4 songs from 4 different genres and compare their spectrograms. Provide a detailed comparative analysis based on your observations and insights from speech understanding.
+
+The submission for Question 2 must include the code, the songs used for analysis, and the report.
+
+## Getting Started
+
+### Dataset
+
+Download the UrbanSound8K dataset from Kaggle:  
+[UrbanSound8K Dataset](https://www.kaggle.com/datasets/chrisfilo/urbansound8k)
+
+### Installation
+
+Make sure to install the following Python packages:
+
+- `torch`
+- `librosa`
+- `matplotlib`
+- `sklearn`
+- `seaborn`
+
+### Running the Code
+
+- **Task A:** Navigate to the folder `question2_taskA` and run `taskA.ipynb`.
+- Ensure that the UrbanSound8K dataset is stored in the correct folder as required by the code.
